@@ -25,6 +25,11 @@ Ilman:
 https://github.com/ilmanhdyt
 Amirul: 
 https://github.com/amiruldev20
+</hdiiofficial> : 
+https://hdiiofficial.github.io
+
+Repo original by 
+https://github.com/ilmanhdyt/ShiraoriBOT-Md
 `
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -35,8 +40,8 @@ https://github.com/amiruldev20
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '💠 Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               displayText: '💠 Support',
+               url: 'https://t.me/WangsafSupport'
              }
 
            },
