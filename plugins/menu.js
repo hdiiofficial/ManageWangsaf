@@ -166,15 +166,15 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '💠 Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               displayText: '💠 Website',
+               url: 'https://hdiiofficial.github.io'
              }
 
            },
              {
-             callButton: {
-               displayText: 'Nomor Owner',
-               PhoneNumber: '0813-5104-7727'
+             urlButton: {
+               displayText: 'Telegram Support',
+               url: 'https://t.me/WangsafSupport'
              }
 
            },
@@ -220,6 +220,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
+handler.register = true
 
 handler.admin = false
 handler.botAdmin = false
