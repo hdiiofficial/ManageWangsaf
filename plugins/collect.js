@@ -14,6 +14,7 @@ handler.help = ['collect']
 handler.tags = ['rpg']
 handler.command = /^(collect)$/i
 
+handler.register = true
 handler.fail = null
 
 module.exports = handler
