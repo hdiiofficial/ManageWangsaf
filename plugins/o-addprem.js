@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
     if (json.includes(who.split`@`[0])) throw `${conn.getName(who)} sudah premium!`
     json.push(`${who.split`@`[0]}`)
     fs.writeFileSync('./src/premium.json', JSON.stringify(json))
-    m.reply(`${conn.getName(who)} sekarang premium!`)
+    m.reply(`selamat ${conn.getName(who)} anda sekarang menjadi mem premium!`)
 
     delete require.cache[require.resolve('../config')]
     require('../config')
