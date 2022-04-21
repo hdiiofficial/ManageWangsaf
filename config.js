@@ -21,7 +21,7 @@ global.APIKeys = { // APIKey Here
   'https://zenzapis.xyz': 'hdiiofficial',
   'https://api.xteam.xyz': '243bfaf72f276a41',
   'https://melcanz.com': 'pRsGgtLR',
-  'https://api.lolhuman.xyz': 'pkebgk8248jskrkfm',
+  'https://api.lolhuman.xyz': '44dab6525da4f83bb6f5515f',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
   'https://pencarikode.xyz': 'pais',
