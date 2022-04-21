@@ -72,6 +72,7 @@ handler.help = ['adventure']
 handler.tags = ['rpg']
 handler.command = /^(adventure|(ber)?petualang(ang)?|mulung|work)$/i
 
+handler.register = true
 handler.fail = null
 
 module.exports = handler
