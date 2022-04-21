@@ -15,5 +15,6 @@ function handler(m, { text }) {
     }))
 }
 handler.command = ['alay', 'case']
+handler.register = true
 
 module.exports = handler
