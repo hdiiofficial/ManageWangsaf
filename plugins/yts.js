@@ -22,5 +22,6 @@ ${v.videoCount} video
 handler.help = ['ytsearch <pencarian>']
 handler.tags = ['internet']
 handler.command = /^yts(earch)?$/i
+handler.register = true
 
 module.exports = handler
