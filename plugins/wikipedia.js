@@ -44,5 +44,6 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['wikipedia <pencarian>']
 handler.tags = ['internet']
 handler.command = /^(wiki(pedia)?)$/i
+handler.register = true
 
 module.exports = handler
