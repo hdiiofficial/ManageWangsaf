@@ -8,7 +8,7 @@
     "whatsapp",
     "multi-device",
     "whatsapp-bot"
-  ]
+  ],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
