@@ -46,5 +46,6 @@ Generation: ${json.generation}
 handler.help = ["pokemon", "catch"].map((v) => v + " <pokemon>");
 handler.tags = ["internet"];
 handler.command = /^(pokemon|pokedex|catch|c)$/i;
+handler.register = true
 
 module.exports = handler;
