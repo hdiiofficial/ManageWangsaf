@@ -35,5 +35,6 @@ handler.tags = ['downloader']
 
 handler.command = /^(tik(tok)?(dl)?)$/i
 handler.limit = true
+handler.register = true
 
 module.exports = handler
