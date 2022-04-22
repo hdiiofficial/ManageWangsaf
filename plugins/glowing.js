@@ -7,5 +7,6 @@ handler.help = ['glowing'].map((v) => v + " <text>")
 handler.tags = ['fun']
 
 handler.command = /^glowing$/i
+handler.register = true
 
 module.exports = handler
