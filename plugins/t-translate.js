@@ -41,5 +41,6 @@ handler.tags = ['tools', 'internet']
 handler.command = /^(tr(anslate)?)$/i
 handler.limit = false
 handler.fail = null
+habdler.register = true
 handler.exp = 0
 module.exports = handler
