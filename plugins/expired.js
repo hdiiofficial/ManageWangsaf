@@ -9,7 +9,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     var now = new Date() * 1
     if (now < global.db.data.chats[who].expired) global.db.data.chats[who].expired += jumlahHari
     else global.db.data.chats[who].expired = now + jumlahHari
-    m.reply(`Berhasil menetapkan hari kadaluarsa untuk Grup ini selama ${args[0]} hari.\n\nHitung Mundur : ${msToDate(global.db.data.chats[who].expired - now)}`)
+    m.reply(`Terima Kasih Telah Menambahkan Saya.\nSaya akan berada disini selama ${args[0]} hari.\n\nSaya akan keluar dari group ${msToDate(global.db.data.chats[who].expired - now)} lagi.`)
 }
 handler.help = ['addsewa <hari>']
 handler.tags = ['owner']
