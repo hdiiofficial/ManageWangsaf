@@ -99,7 +99,7 @@ module.exports = {
                     
                     if (!isNumber(user.warning)) user.warning = 0
                 } else global.db.data.users[m.sender] = {
-                    exp: 0,
+                    exp: 100,
                     limit: 10,
                     lastclaim: 0,
                     registered: false,
@@ -114,7 +114,7 @@ module.exports = {
                     role: 'Beginner',
                     autolevelup: true,
 
-                    money: 0,
+                    money: 1000,
                     healt: 100,
                     limit: 25,
                     potion: 10,
