@@ -14,7 +14,7 @@ handler.command = /^(daily|claim)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.register = false
+handler.register = true
 handler.group = false
 handler.private = false
 
