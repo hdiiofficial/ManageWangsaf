@@ -13,5 +13,6 @@ handler.tags = ['tools']
 handler.command = /^kodepos$/i
 
 handler.limit = true
+handler.register = true
 
 module.exports = handler
