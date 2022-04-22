@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
     m.reply(`Berhasil join grup ${res.gid}`)
 }
 handler.help = ['join <chat.whatsapp.com>']
-handler.tags = ['premium']
+handler.tags = ['owner']
 
 handler.command = /^join$/i
 
