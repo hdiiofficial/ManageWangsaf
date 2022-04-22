@@ -5,5 +5,6 @@ let handler = async (m) => {
 }
 handler.help = ['database', 'user']
 handler.tags = ['info']
+handler.register = true
 handler.command = /^(database|jumlahdatabase|user)$/i
 module.exports = handler
