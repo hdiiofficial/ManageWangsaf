@@ -635,7 +635,7 @@ handler.help = ['open <crate>']
 handler.tags = ['rpg']
 handler.command = /^(open|buka)$/i
 handler.group = true
-handler.register = false
+handler.register = true
 handler.fail = null
 
 module.exports = handler
