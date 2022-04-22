@@ -87,7 +87,7 @@ handler.help = ['fish']
 handler.tags = ['rpg']
 handler.command = /^fish/i
 handler.fishingrod = 1
-
+handler.register = true
 
 handler.disabled = false
 
