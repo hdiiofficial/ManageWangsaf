@@ -67,6 +67,7 @@ handler.tags = ['rpg']
 handler.command = /^(mine|mining)$/i
 
 handler.fail = null
+handler.register = true
 
 module.exports = handler
 
