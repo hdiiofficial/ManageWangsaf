@@ -16,5 +16,6 @@ let mangaingfo = `*Title:* ${title}
 handler.help = ['manga <judul>']
 handler.tags = ['anime']
 handler.command = /^(manga)$/i
+handler.register = true
 //udah di maapin kan?
 module.exports = handler
