@@ -36,7 +36,7 @@ const defaultMenu = {
 ╰❑
 ╭─❑ 「 INFO USER 」 ❑──
 │ ✾ Name: %name
-│ ✾ Status: ---
+│ ✾ Status: ${prems.includes(who.split`@`[0]) ? 'Premium🔥' : 'Gratisan 👎'}
 │ ✾ Limit: %limit
 │ ✾ Money: %money
 │ ✾ Exp: %totalexp
