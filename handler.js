@@ -116,7 +116,7 @@ module.exports = {
 
                     money: 0,
                     healt: 100,
-                    limit: 100,
+                    limit: 25,
                     potion: 10,
                     sampah: 0,
                     kayu: 0,
@@ -533,15 +533,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
+        rowner: 'Khusus Hadi doang',
+        owner: 'Perintah ini Khusus Owner',
         mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+        premium: 'Perintah Khusus User Premium!\nEmang Lu Premium?',
         group: 'Perintah ini hanya dapat digunakan di grup!',
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
+        unreg: 'Sepertinya belum terdaftar didatabase.\nAgar bisa menggunakan bot ini silahkan daftar terlebih dahulu\n\nCara Daftar .daftar nama.umur\nContoh .daftar pipiw.18',
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
