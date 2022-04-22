@@ -34,5 +34,5 @@ handler.help = ['kalkulator <soal>']
 handler.tags = ['tools']
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
 handler.exp = 5
-handler.register = false
+handler.register = true
 module.exports = handler
