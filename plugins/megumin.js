@@ -10,6 +10,7 @@ handler.help = ['megumin']
 handler.tags = ['anime']
 handler.command = /^(megumin)$/i
 
+handler.register = true
 handler.limit = true
 
 module.exports = handler
