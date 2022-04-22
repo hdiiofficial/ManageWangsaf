@@ -12,6 +12,7 @@ conn.sendFile( m.chat, url, 'repo.zip', null, m)
 handler.help = ['githubdl']
 handler.tags = ['github']
 handler.command = /githubdl/i
+handler.register = true
 
 handler.limit = 5
 
