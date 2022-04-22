@@ -12,7 +12,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['download']
 handler.command = /^(mediafire|mf)$/i
+handler.register = true
 
-handler.limit = 1
+handler.limit = 3
 
 module.exports = handler
