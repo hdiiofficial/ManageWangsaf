@@ -7,5 +7,6 @@ handler.help = ['meme']
 handler.tags = ['fun']
 handler.command = /^(meme)$/i
 handler.limit = true
+handler.register = true
 
 module.exports = handler
