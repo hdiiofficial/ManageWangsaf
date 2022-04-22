@@ -46,8 +46,8 @@ ${vid.url}
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'DONASI',
-               url: 'https://saweria.co/ilmanhdyt',
+               displayText: 'Support',
+               url: 'https://t.me/WangsafSupport',
              }
 
            },
@@ -78,6 +78,7 @@ ${vid.url}
 handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^(p|play)$/i
+handler.register = true
 
 handler.exp = 0
 
