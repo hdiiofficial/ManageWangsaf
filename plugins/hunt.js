@@ -95,6 +95,7 @@ handler.tags = ['rpg']
 handler.command = /^hunt/i
 
 handler.disabled = false
+handler.register = true
 
 handler.fail = null
 
