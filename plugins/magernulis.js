@@ -14,5 +14,6 @@ handler.tags = ['nulis']
 handler.command = /^magernulis[1-6]?$/i
 
 handler.limit = true
+handler.register = true
 
 module.exports = handler
