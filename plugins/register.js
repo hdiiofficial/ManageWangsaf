@@ -22,7 +22,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ╭─• 〘 INFO 〙
 │➥ Nama: ${name}
 │➥ Umur: ${age} Tahun
-│➥ Hadiah: ${prems.includes(who.split`@`[0]) ? '✅ Silahkan chat owner untuk claim hadiah' : '❌ Bukan User Premium'}
+│➥ Status: ${prems.includes(who.split`@`[0]) ? 'Premium🔥' : 'Gratisan 👎'}
 ╰──────•
 
 Ketik ${usedPrefix} untuk mendapatkan SERIAL NUMBER\n
