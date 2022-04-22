@@ -42,6 +42,7 @@ let handler = async (m, { conn, args, usedPrefix, DevMode }) => {
 handler.help = ['judi <jumlah>']
 handler.tags = ['rpg']
 handler.command = /^(judi)$/i
+handler.register = true
 
 handler.fail = null
 
