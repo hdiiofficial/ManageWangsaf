@@ -8,12 +8,13 @@ let handler = async (m) => {
   let media = await q.download()
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
   let link = await (isTele ? uploadImage : uploadFile)(media)
-  m.reply(`© MyBotMd\n\n${link}
+  m.reply(`Nih Kak Udah Jadi\n\n${link}
 ${media.length} Byte(s)
 ${isTele ? '(Tidak Ada Tanggal Kedaluwarsa)' : '(Tidak diketahui)'}`)
 }
 handler.help = ['tourl <reply image>']
 handler.tags = ['sticker']
 handler.command = /^(upload|tourl)$/i
+handler.register = true
 
 module.exports = handler
