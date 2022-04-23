@@ -11,5 +11,6 @@ handler.help = ['trendingtwitter']
 handler.tags = ['internet']
 handler.command = /^(trend(twit|ingtwitter))$/i
 handler.limit = true
+handler.register = true
 
 module.exports = handler
