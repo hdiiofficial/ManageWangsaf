@@ -11,4 +11,5 @@ handler.tags = ['vote']
 handler.command = /^(delete|hapus)vote$/i
 handler.group = true
 handler.admin = true
+handler.register = true
 module.exports = handler
