@@ -68,6 +68,7 @@ handler.help = ['use <item> <jumlah>', 'heal']
 handler.tags = ['rpg']
 handler.command = /^(use|heal)$/i
 handler.group = true
+handler.register = true
 
 module.exports = handler
 
