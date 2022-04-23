@@ -34,15 +34,17 @@ const defaultMenu = {
 │✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
 │✾ Runtime: %uptime
 ╰❑
+
 ╭─❑ 「 INFO USER 」 ❑──
 │ ✾ Name: ${user.name}
 │ ✾ Status: ${prems.includes(who.split`@`[0]) ? 'Premium🔥' : 'Gratisan 👎'}
-│ ✾ Limit: %limit
+│ ✾ Limit: ${user.limit}
 │ ✾ Money: %money
 │ ✾ Exp: %totalexp
 │ ✾ Level: %level
 │ ✾ Role: %role
 ╰❑
+
 ╭─❑ 「 INFORMASI 」 ❑──
 │ Bot ini masih tahap beta
 │ apabila ada bug/eror harap
