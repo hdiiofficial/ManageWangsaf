@@ -3,12 +3,13 @@ let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': 'MENU UTAMA',
-  'game': 'MENU GAME',
+  'main': 'MAIN MENU',
+  'group': 'GROUP MENU',
+  'game': 'GAME MENU',
   'rpg': 'MENU RPG',
+  'tools': 'TOOLS MENU',
   'xp': 'MENU EXP',
   'premium': 'MENU PREMIUM',
-  'group': 'MENU GROUP',
   'absen': 'MENU ABSEN',
   'vote': 'MENU VOTE',
   'owner': 'MENU OWNER',
@@ -21,7 +22,6 @@ let tags = {
   'anime': 'MENU ANIME',
   'downloader': 'DOWNLOADER',
   'nsfw': 'MENU NSFW',
-  'tools': 'MENU TOOLS',
   'advanced': 'ADVANCED',
   'quotes': 'MENU QUOTES',
   'info': 'MENU INFO',
@@ -50,6 +50,7 @@ const defaultMenu = {
 │ apabila ada bug/eror harap
 │ lapor ke owner
 ╰❑
+
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',
