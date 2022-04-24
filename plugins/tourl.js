@@ -13,7 +13,7 @@ ${media.length} Byte(s)
 ${isTele ? '(Tidak Ada Tanggal Kedaluwarsa)' : '(Tidak diketahui)'}`)
 }
 handler.help = ['tourl <reply image>']
-handler.tags = ['sticker']
+handler.tags = ['maker']
 handler.command = /^(upload|tourl)$/i
 handler.register = true
 
