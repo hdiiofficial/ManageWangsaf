@@ -37,7 +37,7 @@ let handler = async (m, { conn }) => {
     }
 }
 handler.help = ['sticker']
-handler.tags = ['sticker']
+handler.tags = ['maker']
 handler.command = /^(stiker|s|sticker)$/i
 handler.register = true
 
