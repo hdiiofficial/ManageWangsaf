@@ -26,5 +26,5 @@ function pickRandom(list) {
 //tambah sendiri kalo kurang
 global.bokep = [
 'Fitur ini di matikan',
-'tobat bang astagfirullah'
+'tobat bang astagfirullah',
 ]
