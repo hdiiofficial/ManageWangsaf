@@ -38,10 +38,12 @@ let handler = async (m, { conn, text }) => {
         }
     }
 }
-handler.help = ['wm <packname>|<author>']
-handler.tags = ['sticker']
-handler.command = /^(wm)$/i
+handler.help = ['colong <teks>|<text>']
+handler.tags = ['maker']
+handler.command = /^(colong)$/i
 handler.premium = true
+handler.register = true
+
 module.exports = handler
 
 const isUrl = (text) => {
