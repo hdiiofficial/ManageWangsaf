@@ -45,7 +45,8 @@ let anu = `╭───❑ 「 BALANCE 」 ❑────
      )
 }
 handler.help = ['my', 'my @user']
-handler.tags = ['xp']
+handler.tags = ['info']
 handler.command = /^(my)$/i
+hanler.register = true
 
 module.exports = handler
