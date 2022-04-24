@@ -20,9 +20,18 @@ let premium = `
  └✅ Unlimited Limit 
  └✅ Premium User 
  └❎ Add Bot to Group 
-   └  ▹  *Rp. 5.000*
-     └ Trial 3 hari
- └ Order | hub : owner
+   └  ▹  *Rp. 5k/2Bulan*
+     └ Trial 2 hari
+     
+ ◩ *SEWA BOT*
+└───────
+  └▹1 Bulan 5k
+  └▹2 Bulan 10k
+  └▹5 Bulan 20k
+  └▹7 Bulan 25k
+  └▹1 Tahun 40k
+  
+Jika berminat bisa click ORDER-BOT dibawah ini.
 `
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -56,7 +65,7 @@ let premium = `
      )
 }
 handler.help = ['price']
-handler.tags = ['premium']
+handler.tags = ['main']
 handler.command = /^(price)$/i
 
 module.exports = handler
