@@ -1,49 +1,53 @@
-// Thanks to TOXIC-DEVIL
-// https://github.com/TOXIC-DEVIL
+let linkRegex = /chat\.whatsapp\.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i
 
-/**
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args || !args[0] || args.length === 0) throw `uhm.. nomornya mana?\n\ncontoh:\n${usedPrefix + command} 6281351047727`
-    if (args[0].startsWith('0')) throw 'Gunakan kode Negara!'
-    let user = await conn.isOnWhatsApp(args[0])
-    let exists = user && user.exists ? true : false
-    if (exists) {
-        let sameGroup = [], isInDatabase = false
-        let chat = conn.chats.all().filter(v => v.jid.endsWith('g.us') && !v.read_only)
-        for (let gc of chat) {
-            let participants = gc && gc.metadata && gc.metadata.participants ? gc.metadata.participants : []
-            if (participants.some(v => v.jid === user.jid)) sameGroup.push(gc.jid)
-        }
-        if (user.jid in global.db.data.users) isInDatabase = true
-        let str = ` 
-*Nama:* ${conn.getName(user.jid)}
-*Nomor:* ${splitM(user.jid)}
-*Mention:* ${toM(user.jid)}
-*Api:* wa.me/${splitM(user.jid)}
-*Jid:* ${user.jid}
-*Whatsapp Bussines:* ${user.isBusiness ? 'Ya' : 'Tidak'}
-*Di Database:* ${isInDatabase ? 'Ya' : 'Tidak'}
-*Grup Yang Sama Dengan BOT:* ${sameGroup.length} *Grup*
+let handler = async (m, { conn, text }) => {
+  let [, code] = text.match(linkRegex) || []
+  if (!code) throw 'Link invalid'
+  let res = await conn.query({
+    json: ["query", "invite", code],
+    expect200: true
+  })
+  if (!res) throw res
+  let caption = `
+-- [Group Link Inspector] --
+${res.id}
+*Judul:* ${res.subject}
+*Dibuat* oleh @${res.id.split('-')[0]} pada *${formatDate(res.creation * 1000)}*${res.subjectOwner ? `
+*Judul diubah* oleh @${res.subjectOwner.split`@`[0]} pada *${formatDate(res.subjectTime * 1000)}*`: ''}${res.descOwner ? `
+*Deskripsi diubah* oleh @${res.descOwner.split`@`[0]} pada *${formatDate(res.descTime * 1000)}*` : ''}
+*Jumlah Member:* ${res.size}
+*Member yang diketahui join*: ${res.participants ? '\n' + res.participants.map((user, i) => ++i + '. @' + user.id.split`@`[0]).join('\n').trim() : 'Tidak ada'}
+${res.desc ? `*Deskripsi:*
+${res.desc}` : '*Tidak ada Deskripsi*'}
+*JSON Version*
+\`\`\`${JSON.stringify(res, null, 1)}\`\`\`
 `.trim()
-        m.reply(str, m.chat, {
-            contextInfo: {
-                mentionedJid: conn.parseMention(str)
-            }
-        })
-    } else throw 'nomor tidak terdaftar'
+  let pp = await conn.getProfilePicture(res.id).catch(console.error)
+  if (pp) conn.sendFile(m.chat, pp, 'pp.jpg', null, m)
+  m.reply(caption, false, {
+    contextInfo: {
+      mentionedJid: conn.parseMention(caption)
+    }
+  })
 }
-
-handler.help = ['scan'].map(v => v + ' [nomor]')
+handler.help = ['inspect <chat.whatsapp.com>']
 handler.tags = ['tools']
-handler.command = /^scan$/i
+handler.register = true
+handler.premium = true
+
+handler.command = /^inspect$/i
 
 module.exports = handler
 
-function splitM(jid) {
-    return jid.split('@')[0]
+function formatDate(n, locale = 'id') {
+  let d = new Date(n)
+  return d.toLocaleDateString(locale, {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+  })
 }
-
-function toM(jid) {
-    return '@' + splitM(jid)
-}
-**/
