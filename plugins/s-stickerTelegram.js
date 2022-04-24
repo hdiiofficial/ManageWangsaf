@@ -28,7 +28,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     m.reply('_*Selesai*_')
 }
 handler.help = ['stikertele <url>']
-handler.tags = ['sticker']
+handler.tags = ['maker']
 handler.command = /^(stic?kertele(gram)?)$/i
 handler.register = true
 
