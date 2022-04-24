@@ -6,7 +6,6 @@ let handler = async (m) => {
 }
 handler.help = ['apakah <teks>?']
 handler.tags = ['game']
-handler.customPrefix = /(\?$)/
 handler.command = /^apakah$/i
 handler.register = true
 
