@@ -22,15 +22,16 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ╭─• 〘 INFO 〙
 │➥ Nama: ${name}
 │➥ Umur: ${age} Tahun
+│➥ SN  : ${sn}
 │➥ Status: ${prems.includes(who.split`@`[0]) ? 'Premium🔥' : 'Gratisan 👎'}
 ╰──────•
 
-Ketik ${usedPrefix} untuk mendapatkan SERIAL NUMBER\n
-sn digunakan untuk unregister
+Simpan Nomor sn 
+sn berfungsi untuk unregister
 `.trim())
 }
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
-handler.tags = ['xp', 'main']
+handler.tags = ['main']
 
 handler.command = /^(daftar|reg(ister)?)$/i
 
