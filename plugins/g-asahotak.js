@@ -18,6 +18,7 @@ ${json.result.soal}
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}ao untuk bantuan
 Bonus: ${poin} XP
+Reply soal ini dengan jawaban anda.
 `.trim()
     conn.asahotak[id] = [
         await conn.reply(m.chat, caption, m),
