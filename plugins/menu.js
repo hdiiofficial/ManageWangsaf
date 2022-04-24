@@ -14,7 +14,6 @@ let tags = {
   'premium': 'MENU PREMIUM',
   'absen': 'MENU ABSEN',
   'vote': 'MENU VOTE',
-  'sticker': 'MENU CONVERT',
   'github': 'MENU GITHUB',
   'internet': 'INTERNET',
   'anime': 'MENU ANIME',
