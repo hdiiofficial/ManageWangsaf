@@ -2,7 +2,7 @@ let regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let fetch = require('node-fetch')
 let handler = async (m, { args, usedPrefix, command }) => {
 
-    if (!args[0]) throw 'link githubnya mana? contoh: https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+    if (!args[0]) throw 'link githubnya mana? contoh: https://github.com/hdiiofficial/WhatsAppbot'
 
     if (!regex.test(args[0])) throw 'link salah!'
 
@@ -16,7 +16,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
 
 }
 handler.help = ['gitclone <url>']
-handler.tags = ['github']
+handler.tags = ['downloader']
 handler.command = /gitclone/i
 handler.register = true
 
