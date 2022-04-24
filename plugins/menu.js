@@ -17,16 +17,18 @@ let tags = {
   'anime': 'MENU ANIME',
   'nsfw': 'MENU NSFW',
   'quotes': 'MENU QUOTES',
+  'mageran' 'SI MALES',
   'info': 'MENU INFO',
   'owner': 'MENU OWNER',
   'advanced': 'ADVANCED',
 }
 const defaultMenu = {
   before: `
-╭────ꕥ %me ꕥ────
+╭────ꕥ BOT INFO ꕥ────
+│✾ Name   : %me
 │✾ Version: %version
 │✾ Library: Baileys-MD
-│✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
+│✾ Mode: ${global.opts['self'] ? 'SELF' : 'PUBLIC'} BOT
 │✾ Runtime: %uptime
 ╰❑
 
